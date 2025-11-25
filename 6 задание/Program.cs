@@ -65,7 +65,6 @@ namespace _6_задание
             int cold = 0;
             int warm = 0;
             int hot = 0;
-
             for (int i = 0; i < daysCount; i++)
             {
                 double temp = temperatures[i];

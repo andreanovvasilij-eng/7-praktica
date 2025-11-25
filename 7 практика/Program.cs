@@ -113,17 +113,18 @@ namespace _7_практика
 
 
             //                     ЗАДАЧА 3
+            //                     ЗАДАЧА 3
             Console.WriteLine("Задача 3: Обработка числовых данных");
             double[] numberS = new double[15];
             Random randomS = new Random();
             for (int i = 0; i < numbers.Length; i++)
             {
                 numberS[i] = randomS.NextDouble();
-            }            
+            }
             Console.WriteLine("Массив чисел:");
             for (int i = 0; i < numberS.Length; i++)
             {
-                Console.Write(numberS[i] + " ");
+                Console.Write($"{numberS[i]:F2}" + " ");
             }
             Console.WriteLine("\n");
             double min = numberS[0];
@@ -137,23 +138,23 @@ namespace _7_практика
                     max = numberS[i];
             }
 
-            Console.WriteLine("Минимальный элемент: " + min);
-            Console.WriteLine("Максимальный элемент: " + max);
+            Console.WriteLine($"Минимальный элемент: {min:F2}");
+            Console.WriteLine($"Максимальный элемент: {max:F2}");
             double difference = max - min;
-            Console.WriteLine("Разность максимально и минимального значения: " + difference);
+            Console.WriteLine($"Среднее арифметическое: {difference:F2}");
             double summa = 0;
             for (int i = 0; i < numberS.Length; i++)
             {
                 summa += numberS[i];
             }
             double BolSrCnach = summa / numberS.Length;
-            Console.WriteLine("Среднее арифметическое: " + BolSrCnach);
+            Console.WriteLine($"Среднее арифметическое: {BolSrCnach:F2}");
             Console.WriteLine("Числа больше среднего: ");
             for (int i = 0; i < numberS.Length; i++)
             {
                 if (numberS[i] > BolSrCnach)
                 {
-                    Console.Write(numberS[i] + " ");
+                    Console.Write($"{numberS[i]:F2}" + " ");
                 }
             }
             Console.WriteLine();
