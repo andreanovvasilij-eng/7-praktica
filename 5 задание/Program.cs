@@ -25,7 +25,7 @@ namespace _5_задание
             Console.WriteLine($"Сотрудники с должностью {targetPosition}:");
             var byPosition = employees
                 .Where(e => e.Split('-')[1] == targetPosition)
-                .OrderBy(e => e) // сортировка по алфавиту
+                .OrderBy(e => e)
                 .ToList();
             if (byPosition.Any())
             {

@@ -112,7 +112,8 @@ namespace _7_практика
 
 
 
-            //                     ЗАДАЧА 3
+
+
             //                     ЗАДАЧА 3
             Console.WriteLine("Задача 3: Обработка числовых данных");
             double[] numberS = new double[15];
