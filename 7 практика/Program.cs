@@ -180,13 +180,13 @@ namespace _7_практика
             Console.WriteLine();
             Console.WriteLine("Ненулевых элементов: " + count);         
             int[] result = new int[count];
-                int j = 0;
+                int nullElement = 0;
                 for (int i = 0; i < array.Length; i++)
                 {
                     if (array[i] != 0)
                     {
-                        result[j] = array[i];
-                        j++;
+                        result[nullElement] = array[i];
+                        nullElement++;
                     }
                 }
                 Console.Write("Массив без нулей: ");

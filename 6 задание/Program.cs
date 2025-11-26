@@ -16,6 +16,11 @@ namespace _6_задание
             26, 28, 30, 29, 27, 25, 23,
             20, 18, 15, 12, 10, 8, 6, 4
         };
+            for (int i = 0;  i < temperatures.Length; i++)
+            {
+                Console.Write(temperatures[i] + " ");
+            }
+            Console.WriteLine();
             int daysCount = temperatures.Length;
             int weeksCount = 4;
             int daysPerWeek = 7;
@@ -25,7 +30,7 @@ namespace _6_задание
                 sum += temperatures[i];
             }
             double avgTemp = sum / daysCount;
-            Console.WriteLine($"Средняя температура за месяц: {avgTemp:F1} °C");
+            Console.WriteLine($"Средняя температура за месяц: {avgTemp:F2} °C");
             double minWeekSum = double.MaxValue;
             double maxWeekSum = double.MinValue;
             int coldestWeek = 1;
@@ -78,10 +83,10 @@ namespace _6_задание
                     hot++;
             }
             Console.WriteLine("Распределение по диапазонам:");
-            Console.WriteLine($"Мороз (< −10 °C): {frost} дней");
-            Console.WriteLine($"Холодно (−10…0 °C): {cold} дней");
-            Console.WriteLine($"Тепло (0…25 °C): {warm} дней");
-            Console.WriteLine($"Жарко (> 25 °C): {hot} дней");
+            Console.WriteLine($"Мороз больше -10: {frost} дней");
+            Console.WriteLine($"Холодно примерно -10 до 0: {cold} дней");
+            Console.WriteLine($"Тепло 0 до 25: {warm} дней");
+            Console.WriteLine($"Жарко больше 25: {hot} дней");
         }
     }
 
